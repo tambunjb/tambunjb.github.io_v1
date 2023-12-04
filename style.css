@@ -1,0 +1,59 @@
+body {
+    width: 60%;
+    margin: 0px auto 60px auto;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+        margin: 0px 15px 60px 15px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+  
+.row > div {
+    flex-wrap: wrap;
+    margin-right: 5px;
+}
+
+#buttons-filter {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#buttons-filter > button {
+    margin: 2px;
+}
+
+.clicked {
+    background-color: gray;
+}
+
+h3, .project-desc {
+    margin-bottom: 5px;
+}
+
+#projects-filtered > div, #projects-other > div {
+    margin: 20px 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba( 255, 255, 255, .8 ) url('https://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
+}
+body.loading .modal {
+    overflow: hidden;   
+}
+body.loading .modal {
+    display: block;
+}
